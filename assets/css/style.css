@@ -1,5 +1,5 @@
 /* menu */
-.logo{
+.logo {
     width: 15%;
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
@@ -52,7 +52,7 @@
 
 .parallax {
     background-image: url('../img/hero-bg.jpg');
-    height: 650px; /* Ajusta la altura según sea necesario */
+    height: 550px; /* Ajusta la altura según sea necesario */
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
@@ -126,7 +126,9 @@
         width: 90%;
         background-color: rgba(255, 255, 255, 0.5);
         border-radius: 4%;
-        
+    }
+    .logo {
+        width: 20%;
     }
 }
 
@@ -136,6 +138,9 @@
         width: 90%; 
         background-color: rgba(255, 255, 255, 0.5);
         border-radius: 4%;
+    }
+    .logo {
+        width: 20%;
     }
 }
 
@@ -147,6 +152,9 @@
         background-color: rgba(255, 255, 255, 0.5);
         border-radius: 4%;
     }
+    .logo {
+        width: 20%;
+    }
 }
 
 @media (max-width: 576px) {
@@ -157,6 +165,9 @@
         background-color: rgba(255, 255, 255, 0.5);
         border-radius: 4%;
     }
+    .logo {
+        width: 25%;
+    }
 }
 @media (max-width: 375px) {
     .hero-section h1 {
@@ -165,6 +176,10 @@
         width: 90%;
         background-color: rgba(255, 255, 255, 0.5);
         border-radius: 4%;
+    }
+
+    .logo {
+        width: 25%;
     }
 
     /* cajitas x3*/
@@ -178,11 +193,54 @@
 
     .texto{
         text-align: left;
-
     }
 
     .text-start p{
         margin-top: 15px;
     }
-    
+}
+
+/* PAGINA NOSOTROS*/
+
+.parallax-nosotros {
+    background-image: url('../img/hero-ns.jpg');
+    height: 550px; /* Ajusta la altura según sea necesario */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fondo{
+    background-color: #f3f9fb;
+    height: 300px;
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center;
+}
+.nosotros h2, .mision-vision h2{
+    color: #116ea8;
+    font-weight: bold;
+}
+
+.color{
+    background-color: #a811a8;
+}
+
+.container-img .row-img {
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center;     /* Centra las imágenes verticalmente */
+}
+
+.container-img .col-img {
+    display: flex;
+    justify-content: center; /* Centra la imagen dentro de la columna */
+    align-items: center;     /* Centra verticalmente la imagen dentro de la columna */
+}
+
+.container-img .imagen {
+    max-width: 150px; /* Establece un ancho máximo para todas las imágenes */
+    max-height: 100px; /* Establece una altura máxima para todas las imágenes */
+    object-fit: contain; /* Asegura que la imagen se ajuste al contenedor manteniendo la proporción */
 }
