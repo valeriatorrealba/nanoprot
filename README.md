@@ -10,10 +10,6 @@ A continuación, se muestra la imagen del resultado codificado:
 
 ![Nanoprot SpA](assets/screenshot/nanoprot-spa.png)
 
-## Estructura del Proyecto
-
-El proyecto está organizado de la siguiente manera:
-
 ## Licencia
 
 Este proyecto está bajo la **Apache-2.0**. Consulta el archivo LICENSE para obtener más detalles.
