@@ -1,3 +1,5 @@
+/* PAGINA INDEX */
+
 /* menu */
 .logo {
     width: 15%;
@@ -117,7 +119,105 @@
     font-size: 18px;
 }
 
-/* tamaño segun tañamo*/ 
+/* PAGINA NOSOTROS*/
+
+.parallax-nosotros {
+    background-image: url('../img/hero-ns.jpg');
+    height: 550px; /* Ajusta la altura según sea necesario */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fondo{
+    background-color: #f3f9fb;
+    height: 300px;
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center;
+}
+.nosotros h2, .mision-vision h2{
+    color: #116ea8;
+    font-weight: bold;
+}
+
+.color{
+    background-color: #a811a8;
+}
+
+.container-img .row-img {
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center;     /* Centra las imágenes verticalmente */
+}
+
+.container-img .col-img {
+    display: flex;
+    justify-content: center; /* Centra la imagen dentro de la columna */
+    align-items: center;     /* Centra verticalmente la imagen dentro de la columna */
+}
+
+.container-img .imagen {
+    max-width: 150px; /* Establece un ancho máximo para todas las imágenes */
+    max-height: 100px; /* Establece una altura máxima para todas las imágenes */
+    object-fit: contain; /* Asegura que la imagen se ajuste al contenedor manteniendo la proporción */
+}
+
+/* PAGINA PRODUCTOS */
+
+.parallax-productos {
+    background-image: url('../img/hero-pr.jpg');
+    height: 550px; /* Ajusta la altura según sea necesario */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-productos img{
+    width: 80%;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; 
+}
+
+.centrado{
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center;  
+}
+
+.centro h3{
+    color: #116ea8;
+}
+
+/* .img-centro img{
+    width: 80%;
+    padding: 0;
+    text-align: start;
+
+}
+ */
+
+.img-centro {
+    display: flex;
+    justify-content: flex-end; /* Mueve la imagen hacia la derecha */
+    align-items: center; /* Centra verticalmente la imagen dentro de la columna */
+}
+
+.img-centro img {
+    max-width: 60%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+
+
+
+
+
+
+
+/* Media query*/ 
 
 @media (max-width: 1200px) {
     .hero-section h1 {
@@ -198,49 +298,4 @@
     .text-start p{
         margin-top: 15px;
     }
-}
-
-/* PAGINA NOSOTROS*/
-
-.parallax-nosotros {
-    background-image: url('../img/hero-ns.jpg');
-    height: 550px; /* Ajusta la altura según sea necesario */
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.fondo{
-    background-color: #f3f9fb;
-    height: 300px;
-    display: flex;
-    justify-content: center; /* Centra las imágenes horizontalmente */
-    align-items: center;
-}
-.nosotros h2, .mision-vision h2{
-    color: #116ea8;
-    font-weight: bold;
-}
-
-.color{
-    background-color: #a811a8;
-}
-
-.container-img .row-img {
-    display: flex;
-    justify-content: center; /* Centra las imágenes horizontalmente */
-    align-items: center;     /* Centra las imágenes verticalmente */
-}
-
-.container-img .col-img {
-    display: flex;
-    justify-content: center; /* Centra la imagen dentro de la columna */
-    align-items: center;     /* Centra verticalmente la imagen dentro de la columna */
-}
-
-.container-img .imagen {
-    max-width: 150px; /* Establece un ancho máximo para todas las imágenes */
-    max-height: 100px; /* Establece una altura máxima para todas las imágenes */
-    object-fit: contain; /* Asegura que la imagen se ajuste al contenedor manteniendo la proporción */
 }
