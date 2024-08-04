@@ -54,7 +54,7 @@
 
 .parallax {
     background-image: url('../img/hero-bg.jpg');
-    height: 550px; /* Ajusta la altura según sea necesario */
+    height: 600px; /* Ajusta la altura según sea necesario */
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
@@ -121,11 +121,11 @@
 
 /* PAGINA NOSOTROS*/
 
-.parallax-nosotros {
+.parallax-nosotros, .parallax-productos, .parallax-contacto {
     background-image: url('../img/hero-ns.jpg');
-    height: 550px; /* Ajusta la altura según sea necesario */
+    height: 350px; 
     background-attachment: fixed;
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -137,13 +137,9 @@
     justify-content: center; /* Centra las imágenes horizontalmente */
     align-items: center;
 }
-.nosotros h2, .mision-vision h2{
+.nosotros h2, .mision-vision h2, .contacto h2 {
     color: #116ea8;
     font-weight: bold;
-}
-
-.color{
-    background-color: #a811a8;
 }
 
 .container-img .row-img {
@@ -168,11 +164,6 @@
 
 .parallax-productos {
     background-image: url('../img/hero-pr.jpg');
-    height: 550px; /* Ajusta la altura según sea necesario */
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .img-productos img{
@@ -191,17 +182,9 @@
     color: #116ea8;
 }
 
-/* .img-centro img{
-    width: 80%;
-    padding: 0;
-    text-align: start;
-
-}
- */
-
 .img-centro {
     display: flex;
-    justify-content: flex-end; /* Mueve la imagen hacia la derecha */
+    justify-content: center; /* Mueve la imagen hacia la derecha */
     align-items: center; /* Centra verticalmente la imagen dentro de la columna */
 }
 
@@ -210,12 +193,11 @@
     height: auto; /* Mantiene la proporción de la imagen */
 }
 
+/* PAGINA CONTACTO */
 
-
-
-
-
-
+.parallax-contacto {
+    background-image: url('../img/hero-co.jpg');
+}
 
 /* Media query*/ 
 
@@ -230,6 +212,16 @@
     .logo {
         width: 20%;
     }
+    .img-centro, .img-productos {
+        display: flex;
+        justify-content: center; /* Centra la imagen horizontalmente */
+        align-items: center;     /* Centra la imagen verticalmente */
+    }
+
+    .img-centro img, .img-productos img {
+        max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+        height: auto;    /* Mantiene la proporción de la imagen */
+    }
 }
 
 @media (max-width: 992px) {
@@ -242,9 +234,37 @@
     .logo {
         width: 20%;
     }
+    .img-centro, .img-productos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-centro img, .img-productos img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 @media (max-width: 768px) {
+    .centrado-medio {
+        display: flex;
+        flex-direction: column-reverse; /* Invierte el orden de las columnas */
+        align-items: center;
+    }
+    .img-centro, .centro {
+        width: 100%; /* Asegura que ambos elementos ocupen el 100% del ancho */
+    }
+
+    .img-centro img {
+        max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+        height: auto;
+    }
+
+    .centro {
+        text-align: center; /* Centra el texto */
+        margin-bottom: 20px; /* Añade margen inferior al texto para separar la imagen */
+    }
     .hero-section h1 {
         margin-top: calc(-19% - 0.1em);
         font-size: 2em; 
@@ -255,9 +275,37 @@
     .logo {
         width: 20%;
     }
+    .img-centro, .img-productos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-centro img, .img-productos img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 @media (max-width: 576px) {
+    .centrado-medio {
+        display: flex;
+        flex-direction: column-reverse; /* Invierte el orden de las columnas */
+        align-items: center;
+    }
+    .img-centro, .centro {
+        width: 100%; /* Asegura que ambos elementos ocupen el 100% del ancho */
+    }
+
+    .img-centro img {
+        max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+        height: auto;
+    }
+
+    .centro {
+        text-align: center; /* Centra el texto */
+        margin-bottom: 20px; /* Añade margen inferior al texto para separar la imagen */
+    }
     .hero-section h1 {
         margin-top: calc(-19% - 0.1em);
         font-size: 2em;
@@ -268,8 +316,38 @@
     .logo {
         width: 25%;
     }
+    .img-centro, .img-productos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-centro img, .img-productos img {
+        max-width: 100%;
+        height: auto;
+    }
+    
 }
 @media (max-width: 375px) {
+    .centrado-medio {
+        display: flex;
+        flex-direction: column-reverse; /* Invierte el orden de las columnas */
+        align-items: center;
+    }
+    .img-centro, .centro {
+        width: 100%; /* Asegura que ambos elementos ocupen el 100% del ancho */
+    }
+
+    .img-centro img {
+        max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+        height: auto;
+    }
+
+    .centro {
+        text-align: center; /* Centra el texto */
+        margin-bottom: 20px; /* Añade margen inferior al texto para separar la imagen */
+    }
+    
     .hero-section h1 {
         margin-top: calc(-19% - 0.1em);
         font-size: 2em;
@@ -298,4 +376,6 @@
     .text-start p{
         margin-top: 15px;
     }
+
+
 }
